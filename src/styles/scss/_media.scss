@@ -1,0 +1,49 @@
+@media (max-width: 576px) {
+  * {
+    font-size: 9px;
+  }
+
+  .arrow {
+    width: 5px;
+    height: 5px;
+    border-top: 1.5px solid #6e18c0;
+    border-right: 1.5px solid #6e18c0;
+    margin-left: 5px;
+  }
+
+  .container {
+    padding: 10px 10px 10px 10px;
+    grid-template: 90px auto / 100%;
+    gap: 10px;
+  }
+
+  .table {
+    padding: 10px;
+
+    &-head {
+      grid-template-columns: 30px repeat(3, 1fr);
+      column-gap: 15px;
+    }
+
+    &-body {
+      &__items {
+        grid-template: 30px / 30px repeat(3, 1fr);
+        column-gap: 15px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  * {
+    font-size: 8px;
+  }
+
+  .container {
+    padding: 5px 5px 5px 5px;
+    gap: 5px;
+  }
+
+  .table {
+    padding: 5px;
+  }
+}

@@ -1,0 +1,5 @@
+.description {
+  display: grid;
+  align-items: center;
+  grid-template: 30px / repeat(auto-fill, 250px);
+}

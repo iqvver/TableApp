@@ -1,0 +1,56 @@
+.filter {
+  display: grid;
+  grid-template: repeat(2, 30px) / 100%;
+  grid-auto-rows: 30px;
+  gap: 5px;
+
+  &__search {
+    width: 100%;
+    height: 100%;
+
+    input {
+      width: 100%;
+      height: 100%;
+      padding: 0 5px 0 5px;
+      background: none;
+      outline: none;
+      border: 1px solid $sub-color;
+    }
+  }
+
+  &__select {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template: 30px / repeat(auto-fill, 150px);
+    grid-auto-rows: 30px;
+    row-gap: 5px;
+
+    select {
+      width: 100%;
+      height: 100%;
+      padding: 0 5px 0 5px;
+      background: none;
+      outline: none;
+      border: 1px solid $sub-color;
+    }
+
+    input {
+      width: 100%;
+      height: 100%;
+      background-color: $text-color;
+      color: $sub-color;
+      border: solid 2px $sub-color;
+
+      &:hover {
+        background-color: $sub-color;
+        color: $text-color;
+      }
+
+      &:active {
+        background-color: $text-color;
+        color: $sub-color;
+      }
+    }
+  }
+}

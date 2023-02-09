@@ -1,0 +1,46 @@
+.table {
+  padding: 20px 20px 20px 20px;
+  border: 1px solid $sub-color;
+  display: grid;
+  grid-template: 30px auto / 100%;
+  gap: 10px;
+
+  &-head {
+    padding: 0 5px 0 5px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: start;
+    background-color: $text-color;
+    color: $main-color;
+
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-body {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: repeat(6, 30px);
+    align-items: center;
+    row-gap: 5px;
+
+    &__items {
+      padding: 0 5px 0 5px;
+      display: grid;
+      grid-template: 30px / repeat(4, 1fr);
+      align-items: center;
+      justify-items: start;
+      justify-content: space-between;
+
+      &:nth-of-type(odd) {
+        background: $sub-color;
+      }
+    }
+  }
+}

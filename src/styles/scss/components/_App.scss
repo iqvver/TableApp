@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  transition: 2s;
+}
+
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
+.active {
+  font-weight: bold;
+  color: $text-color;
+}
